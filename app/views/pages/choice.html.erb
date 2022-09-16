@@ -1,0 +1,10 @@
+<%= render "shared/navbar" %>
+
+
+<div class="cards">
+  <%= link_to classic_path do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @playlists[0].image_url %>)">
+      Classic
+    </div>
+  <% end %>
+</div>
