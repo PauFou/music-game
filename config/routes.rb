@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "choice", to: "pages#choice"
   get "classic", to: "pages#classic"
-
+  resource :playlist, only: [:index, :show, :update, :destroy]
 end
