@@ -1,2 +1,3 @@
 class SudokuController < ApplicationController
+
 end

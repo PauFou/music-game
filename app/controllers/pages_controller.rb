@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def choice
     @playlists = Playlist.all
+    @sudokus = Sudoku.all
   end
 
   def classic

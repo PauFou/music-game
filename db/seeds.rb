@@ -37,5 +37,6 @@ Sudoku.create!(
     [7, 0, 0, 0, 2, 0, 0, 0, 6],
     [0, 6, 0, 0, 0, 0, 2, 8, 0],
     [0, 0, 0, 4, 1, 9, 0, 0, 5],
-    [0, 0, 0, 0, 8, 0, 0, 7, 9]]
+    [0, 0, 0, 0, 8, 0, 0, 7, 9]],
+  image_url: 'https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
 )
