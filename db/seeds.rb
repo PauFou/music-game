@@ -9,10 +9,11 @@ all_songs = JSON.parse(user_serialized)
 puts "Cleaning DB"
 Playlist.destroy_all
 Music.destroy_all
+Sudoku.destroy_all
 
 puts "DB cleaned"
 
-puts 'Creating first playlist'
+puts 'Creating playlists'
 blind_playlist = Playlist.create(name: 'classic', category: 'top', image_url: 'https://images.unsplash.com/photo-1505628346881-b72b27e84530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')
 all_songs["data"].each do |song|
   Music.create!(
@@ -26,6 +27,7 @@ all_songs["data"].each do |song|
   )
 end
 
+puts 'Creating playlist Sudokus'
 Sudoku.create!(
   level: "easy",
   grid: [

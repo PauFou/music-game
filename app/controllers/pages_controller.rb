@@ -1,17 +1,4 @@
 class PagesController < ApplicationController
-
-
-  def choice
-    @playlists = Playlist.all
-    @sudokus = Sudoku.all
-  end
-
-  def classic
-    @playlists = Playlist.all
-  end
-
-
-  def sudoku_game
-    forEach(element => console.log(element))
+  def home
   end
 end

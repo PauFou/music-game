@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   root to: "pages#home"
   get "choice", to: "pages#choice"
-  resource :playlist, only: [:show, :update, :destroy]
-  resource :sudoku, only: [:show, :update, :destroy]
+  resources :playlist
+  resources :sudoku
 end
