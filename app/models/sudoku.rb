@@ -11,7 +11,6 @@ class Sudoku < ApplicationRecord
 
       line.each do |el|
         return false if line.uniq != line
-
         count += 1
       end
       test = (0..8)
@@ -20,8 +19,6 @@ class Sudoku < ApplicationRecord
         cat = []
         board.each { |y| cat << y[num] }
         return false if cat.uniq != cat
-
-        p cat
       end
     end
 
